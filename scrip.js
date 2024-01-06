@@ -7,14 +7,14 @@ function addTask() {
         let li = document.createElement("li");
         li.innerHTML = newTask;
         let span = document.createElement("span");
-        span.innerHTML = "✖";
+        span.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✖";
         li.appendChild(span);
         taskList.appendChild(li); // Correct variable name
     } else {
         alert("ENTER A TASK");
     }
     saveData();
-    task.value = "";
+    task.value = "";// To clear task valu
 }
 
 taskList.addEventListener("click", function (event) {

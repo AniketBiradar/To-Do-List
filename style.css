@@ -117,6 +117,12 @@ video {
     left: 8px;
     top: 28px;
 }
-.span{
+.span {
     position: absolute;
+    right: 800px; /* Adjust this value based on your design */
+    top: 50%;
+    transform: translateY(-500%);
+    color: #ffff;
+    font-size: 17px;
+    cursor: pointer;
 }
