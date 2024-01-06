@@ -49,5 +49,74 @@ video {
 }
 .todo_app h1{
     color: #ffff;
-    size: 20px;
+    font-size: 30px;
+}
+.fields{
+    position: absolute;
+    margin-top: 230px;
+    background-color: transparent;
+}
+.fields input{
+    height: 40px;
+    width: 190%;
+    margin-left: -80px;
+    background-color: #333131;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #ffff;
+}
+.fields button{
+    width: 20%;
+    font-size: 18px;
+    color: #ffff;
+    height: 40px;
+    position: absolute;
+    right: -70px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color:#333131;
+    cursor: pointer;
+    margin-top: -40px;
+ }
+ .task-list{
+    margin-top: 280px;
+    margin-left: -200px;
+    color: #ffff;
+
+}
+.task-list li{
+    padding: 28px 40px 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:17px;
+    position: relative;
+}
+.task-list li.checked{
+    text-decoration: line-through;
+}
+
+.task-list li.checked::before{
+    background-image: url("https://sus.org/wp-content/themes/sus/assets/images/icons/check-mark-green-circle.svg");
+    height: 20px;
+    width: 20px;
+}
+
+.task-list li::before{
+    content:"";
+    background-image: url("image/cricle.png");
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    left: 8px;
+    top: 28px;
+}
+.span{
+    position: absolute;
 }
